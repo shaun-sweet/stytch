@@ -5,7 +5,7 @@ import classes from '@/components/Layout/layout.module.css';
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const a = 0;
   return (
     <Layout>
       <div>
