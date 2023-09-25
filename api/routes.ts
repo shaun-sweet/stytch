@@ -1,8 +1,9 @@
 import express from 'express';
-import * as todoController from './controllers/todo.controller.ts';
+import * as usersController from './controllers/users.controller.ts';
 
 const routes = express.Router();
 
-routes.get('/todos', todoController.getAllTodos);
+routes.get('/users', usersController.getAllUsers);
+routes.get('/user/:userId', usersController.getUser);
 
 export default routes;
